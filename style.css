@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+body{
+    width: 100vw;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+span{
+    color: aqua;
+    font-size: 45px;
+}
+.box{
+    color: black;
+    font-size: 45px;
+    border: 2px solid black;
+    height: 100px;
+    width: 100px;
+    box-shadow: 0 0 0 2px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.box:hover{
+    background-color: aqua;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+}
+#status{
+    padding: 20px;
+    font-size: 25px;
+    font-weight: 500px;
+}
+button{
+    width: 150px;
+    height: 40px;
+    font-size: 18px;
+    color: black;
+    font-weight: 500px;
+    background-color: aqua;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+.win{
+    animation: winAnimation ease-in-out 1s infinite;
+}
+@keyframes winAnimation{
+    0%{background-color: aqua;}
+    100%{background-color: rgb(141, 243, 243);}
+
+}
